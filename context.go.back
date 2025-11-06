@@ -92,17 +92,17 @@ func (y Context) Get(key any) (value any, exists bool) {
 	return
 }
 
-func (y Context) SetRequestId(requestId string) {
+func (y *Context) SetRequestId(requestId string) {
 	y.RequestId = requestId
 }
-func (y Context) GetRequestId() any {
+func (y *Context) GetRequestId() any {
 	return y.RequestId
 }
 
-func (y Context) SetUserId(userId string) {
+func (y *Context) SetUserId(userId string) {
 	y.UserId = UserId(userId)
 }
 
-func (y Context) GetUserId() any {
+func (y *Context) GetUserId() any {
 	return y.UserId
 }
