@@ -42,7 +42,7 @@ func MakeService(rep interface{}) *StructMap {
 	return &ser
 }
 
-func StructConvertToStructWithTag(output any, tag string, weaklyTypedInput bool, input ...any) error {
+func StructConvertWithTag(output any, tag string, weaklyTypedInput bool, input ...any) error {
 	config := &DecoderConfig{
 		Metadata:         nil,
 		Result:           output,
